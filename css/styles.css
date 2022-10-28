@@ -1,0 +1,78 @@
+.row{
+    text-align: center;
+    height: 100%;
+}
+
+html ,body{
+    height: 100%;
+}
+#startWindow{
+    background-color: grey;
+}
+
+#mainBoard{
+    background-color: whitesmoke;
+    align-items: center;
+    /* text-align: center; */
+}
+
+#historyWindow{
+    background-color: grey;
+}
+#myBoard{
+    width: 50%;
+}
+#myBoard{
+    margin: auto;
+    padding-top: 5%;
+    padding-bottom: 3%;
+    width: 55%;
+    flex: 50%;
+}
+
+#text-move-history{
+    margin: auto;
+    color: white;
+}
+#move-history{
+    height: fit-content;
+    background-color: whitesmoke;
+    margin-top: 15%;
+    margin-bottom: 3%;
+}
+
+#footer{
+    color: blue;
+}
+
+.okIcon{
+    color: wheat;
+}
+
+.leftPanel {
+    margin-top: 10%;
+    font-size:17px;
+    font-family:Comic Sans MS;
+    width:30%;
+    height:40px;
+    border-width:0%;
+    color:rgba(243, 243, 243, 1);
+    border-color:#74b807;
+    font-weight:bold;
+    font-style:italic;
+    border-top-left-radius:18px;
+    border-top-right-radius:18px;
+    border-bottom-left-radius:18px;
+    border-bottom-right-radius:18px;
+    box-shadow:inset 0px -2px 0px 0px rgba(114, 163, 74, 1);
+    text-shadow:inset 0px 1px 50px rgba(143, 230, 10, 1);
+    background:linear-gradient(rgba(159, 216, 31, 1), rgba(93, 129, 12, 1));
+  }
+  
+.leftPanel:hover {
+    background: linear-gradient(rgba(93, 129, 12, 1), rgba(159, 216, 31, 1));
+  }
+                
+
+
+                

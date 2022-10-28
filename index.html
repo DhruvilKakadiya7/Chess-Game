@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chess</title>
+  <link rel="stylesheet" href="css\chessboard-1.0.0.css">
+  <link rel="stylesheet" href="css\styles.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <!-- <script src="project\chessboardjs-1.0.0\js\chessboard-1.0.0.min.js"></script> -->
+  <script src="js\chessboard-1.0.0.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="row">
+
+    <!-- Left Board -->
+    <div id="startWindow" class="col-md">
+      <!-- Difficulty DropDown -->
+      <i class="fa-solid fa-chess"> c h ess </i>
+      <br><br>
+      <b>Select Difficulty level</b>
+      <br>
+      <div class="form-group">
+        <label for="search-depth">Select hardness level</label>
+        <select id="search-depth">
+          <option value="1">Easy</option>
+          <option value="2" selected>Medium</option>
+          <option value="3">Hard</option>
+          <!-- <option value="4">4</option>
+          <option value="5">5</option> -->
+        </select>
+      </div>
+      <button id="mainStartBtn" class="leftPanel"> Start </button>
+      <div id="footer">
+         © Dhruvil Kakadiya
+         <br>
+         <!-- <i class="fa-thin fa-envelope" href=""></i> -->
+         <a class="okIcon" href="mailto:kakadiyadhruvil3006@gmail.com"><i class="fa-solid fa-envelope" > M a i l  m e</i></a><br>
+         <a class="okIcon" href="https://www.linkedin.com/in/dhruvil-kakadiya-b88860229/"><i class="fa-brands fa-linkedin" > L i n k e d i n</i></a>
+      </div>
+    </div>
+    <!-- Main Center Board -->
+    <div id="mainBoard" class="col-md-6 col-sm-12">
+      <div id="myBoard"></div>
+      <button id="clearBoard">
+        Clear Board
+      </button>
+      <h2>Benefit</h2>
+      <p><span id="benefitColor">No one</span> has the benefit
+        (<span id="benefitNumber">0</span>).</p>
+      <div class="progress">
+        <div class="progress-bar bg-primary progress-bar-striped progress-bar-animated" role="progressbar"
+          aria-valuenow="0" style="width: 50%" aria-valuemin="-2000" aria-valuemax="4000" id='benefitBar'>
+        </div>
+      </div>
+      <div class="col-md-12">
+        <h2>Status</h2>
+        <p><span id="status">No check, checkmate, or draw.</span></p>
+      </div>
+      
+    </div>
+
+    <!-- RIght side move history board -->
+    <div id="historyWindow" class="col-md">
+      <b id="text-move-history">Move History</b>
+      <div id="move-history" class="move-history"></div>
+    </div>
+  </div>
+  <script src="js\chess.js"></script>
+  <script src="js\main.js"></script>
+  <!-- <script>
+    var board = Chessboard('myBoard', 'start')
+  </script> -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/eea6f9417f.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
